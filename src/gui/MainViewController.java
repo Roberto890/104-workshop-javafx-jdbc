@@ -53,6 +53,7 @@ public class MainViewController implements Initializable{
     //essa aplicacao grafica te, multitread para nao interromper para nao dar nada de estranho usa synchronized
     private synchronized void loadView(String absoluteName){
         try{
+        	// Cria um novo loader usando o string passado como caminho
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
             VBox newVBox = loader.load();
 
